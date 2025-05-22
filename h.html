@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Street Light & Women Security</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    nav {
+      background-color: #0f172a;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .nav-right a {
+      margin-right: 1rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    .btn-signin, .btn-getstarted {
+      padding: 0.4rem 1rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .btn-getstarted {
+      background-color: white;
+      color: #0f172a;
+    }
+
+    .hero {
+      background: url('images/facial-recognition-software.jpeg') no-repeat center center/cover;
+      height: 500px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      max-width: 900px;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    footer h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .nav-right {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <div>🎆 TEAM SPARK</div>
+    </div>
+    <div class="nav-right">
+      <a href="#">Product</a>
+      <a href="#">Dashboard</a>
+      <a href="#">About</a>
+      <a href="#">Stake</a>
+      <button class="btn-signin">Sign In</button>
+      <button class="btn-getstarted" onclick="startRecognition()">Show</button>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div>
+      <h1>Smart Street Light and Women Security</h1>
+      <p>
+        In the era of smart cities, our Smart Street Light System uses automation, energy-efficient LED lighting, and real-time IoT monitoring to enhance urban safety, reduce costs, and promote sustainability.
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="text-center">Introduction</h2>
+    <p>
+      Smart street lights use sensors and ESP8266 controllers to adjust brightness dynamically. They help save energy by dimming lights when detecting smaller objects and brightening for larger ones. These systems can be remotely managed using IoT.
+    </p>
+  </section>
+
+  <section class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="images/freepik__the-style-is-candid-image-photography-with-natural__15765.jpeg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/freepik__the-style-is-candid-image-photography-with-natural__23793.jpeg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/freepik__the-style-is-candid-image-photography-with-natural__23790.jpeg" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Download Research</h3>
+        <button class="btn btn-info">Download PDF</button>
+      </div>
+      <div class="col-md-6">
+        <h3>Decision Making Algorithm</h3>
+        <p>
+          Lights turn on when motion is detected and adjust brightness based on object size and light conditions to optimize energy use.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Energy Saving Strategy</h3>
+        <p>
+          Using adaptive light control and motion-based brightness ensures efficient energy usage and future integration with renewable energy.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h3>Smart Poles</h3>
+        <p>
+          Smart poles equipped with LED tech, IoT sensors, and communication modules create a responsive and data-driven lighting system.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h1>Meet Our Team</h1>
+    <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+      <div class="col">
+        <div class="card">
+          <img src="images/aish.jpeg" class="card-img-top" alt="Aishwarya">
+          <div class="card-body">
+            <h5 class="card-title">Aishwarya</h5>
+            <a href="#" class="btn btn-primary">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/tuhin.png" class="card-img-top" alt="Tuhin">
+          <div class="card-body">
+            <h5 class="card-title">Tuhin</h5>
+            <a href="#" class="btn btn-primary">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/suman.jpeg" class="card-img-top" alt="Suman">
+          <div class="card-body">
+            <h5 class="card-title">Suman</h5>
+            <a href="#" class="btn btn-primary">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function startRecognition() {
+      alert('Voice recognition activated (functionality not implemented).');
+    }
+  </script>
+</body>
+</html>
